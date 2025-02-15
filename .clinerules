@@ -2,18 +2,6 @@
 
 Este projeto é uma extensão para o Thunderbird que utiliza IA para melhorar a escrita de emails.
 
-## Organização dos Arquivos
-
-- `/manifest.json` - Arquivo principal de configuração da extensão
-- `/options/` - Configurações da extensão
-  - `options.html` - Interface para configurar a chave da API OpenAI
-  - `options.js` - Lógica para salvar/carregar configurações
-- `/background/` 
-  - `background.js` - Script de background para processar texto via API OpenAI
-- `/content/` - Scripts e estilos para a interface
-  - `compose.js` - Adiciona o botão dropdown e gerencia interações
-  - `compose.css` - Estilos para o botão e modal
-
 ## Fluxo Principal
 
 1. Usuário configura sua chave da API OpenAI

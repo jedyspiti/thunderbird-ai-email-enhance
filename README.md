@@ -49,12 +49,19 @@ Para desenvolver a extensão:
 
 1. Clone este repositório
 2. Faça suas modificações
-3. Teste a extensão no Thunderbird:
+3. Habilite o modo de desenvolvimento no Thunderbird:
+   - Vá em Ferramentas > Configurações > Configuração do Editor
+   - Procure por "xpinstall.signatures.required"
+   - Defina como "false"
+4. Compacte os arquivos da extensão em um arquivo .zip
+5. Renomeie a extensão do arquivo de .zip para .xpi
+6. Instale a extensão no Thunderbird:
    - Vá em Ferramentas > Add-ons
    - Clique no ícone de engrenagem
-   - Selecione "Debug Add-ons"
-   - Clique em "Carregar Add-on Temporário"
-   - Selecione o arquivo manifest.json do projeto
+   - Selecione "Instalar add-on a partir de arquivo"
+   - Selecione o arquivo .xpi
+
+Nota: A extensão usa APIs experimentais do Thunderbird, portanto é necessário desabilitar a verificação de assinatura para testes locais.
 
 ## Licença
 
